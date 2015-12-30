@@ -1,7 +1,7 @@
 package com.ensat.services;
 
 
-import com.ensat.domain.Product;
+import com.ensat.entities.Product;
 
 public interface ProductService {
     Iterable<Product> listAllProducts();
@@ -9,4 +9,7 @@ public interface ProductService {
     Product getProductById(Integer id);
 
     Product saveProduct(Product product);
+
+    void deleteProduct(Integer id);
+
 }

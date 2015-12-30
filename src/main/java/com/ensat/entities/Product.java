@@ -1,4 +1,4 @@
-package com.ensat.domain;
+package com.ensat.entities;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -13,16 +13,15 @@ public class Product {
     private Integer version;
 
     private String productId;
-    private String description;
-    private String imageUrl;
+    private String name;
     private BigDecimal price;
 
-    public String getDescription() {
-        return description;
+    public String getName() {
+        return name;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Integer getVersion() {
@@ -47,14 +46,6 @@ public class Product {
 
     public void setProductId(String productId) {
         this.productId = productId;
-    }
-
-    public String getImageUrl() {
-        return imageUrl;
-    }
-
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
     }
 
     public BigDecimal getPrice() {

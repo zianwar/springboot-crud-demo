@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head lang="en">
 
-    <title>Spring Framework Guru</title>
+    <title>Spring Boot Exemple</title>
 
     <!--/*/ <th:block th:include="fragments/headerinc :: head"></th:block> /*/-->
 </head>
@@ -22,21 +22,15 @@
                 </div>
             </div>
             <div class="form-group">
-                <label class="col-sm-2 control-label">Description:</label>
+                <label class="col-sm-2 control-label">Name:</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" th:field="*{description}"/>
+                    <input type="text" class="form-control" th:field="*{name}"/>
                 </div>
             </div>
             <div class="form-group">
                 <label class="col-sm-2 control-label">Price:</label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control" th:field="*{price}"/>
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-2 control-label">Image Url:</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" th:field="*{imageUrl}"/>
                 </div>
             </div>
             <div class="row">
