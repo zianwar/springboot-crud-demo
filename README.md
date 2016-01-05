@@ -1,6 +1,6 @@
 # springboot-crud-demo
 
-Spring Boot CRUD demo is a demonstrating how to implement simple CRUD operations with a Product entity, it was based on a school presentation, the full blog article can be found at http://zianwar.com/spring
+Spring Boot CRUD demo is demonstrating how to implement simple CRUD operations with a Product entity, it was based on a school presentation, the full blog article can be found at http://zianwar.com/spring
 
 ## What's inside 
 This project is based on the [Spring Boot](http://projects.spring.io/spring-boot/) project and uses these packages :
