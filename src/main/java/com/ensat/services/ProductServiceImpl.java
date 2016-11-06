@@ -1,12 +1,16 @@
 package com.ensat.services;
 
-import com.ensat.repositories.ProductRepository;
 import com.ensat.entities.Product;
+import com.ensat.repositories.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+/**
+ * Product service implement.
+ */
 @Service
 public class ProductServiceImpl implements ProductService {
+
     private ProductRepository productRepository;
 
     @Autowired
@@ -33,4 +37,5 @@ public class ProductServiceImpl implements ProductService {
     public void deleteProduct(Integer id) {
         productRepository.delete(id);
     }
+
 }
