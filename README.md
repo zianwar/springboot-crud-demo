@@ -8,7 +8,7 @@ This project is based on the [Spring Boot](http://projects.spring.io/spring-boot
 - Spring Core
 - Spring Data (Hibernate & MySQL)
 - Spring MVC (Tomcat)
-- [Thymleaf](www.thymeleaf.org)
+- [Thymleaf](https://thymeleaf.org)
 
 ## Installation 
 The project is created with Maven, so you just need to import it to your IDE and build the project to resolve the dependencies
