@@ -31,9 +31,8 @@ public class ProductController {
     @RequestMapping(value = "/products", method = RequestMethod.GET)
     public String list(Model model) {
         model.addAttribute("products", productService.listAllProducts());
-        System.out.println("Returning rpoducts:");
+        System.out.println("Returning products");
         return "products";
-    }
 
     /**
      * View a specific product by its id.
