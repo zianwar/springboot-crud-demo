@@ -1,5 +1,5 @@
-CREATE DATABASE  IF NOT EXISTS `springbootdb` /*!40100 DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci */;
-USE `springbootdb`;
+CREATE DATABASE  IF NOT EXISTS springbootdb; /*!40100 DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci */;
+USE springbootdb;
 -- MySQL dump 10.13  Distrib 5.7.12, for osx10.9 (x86_64)
 --
 -- Host: 127.0.0.1    Database: springbootdb
@@ -24,7 +24,7 @@ USE `springbootdb`;
 DROP TABLE IF EXISTS `product`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `product` (
+CREATE TABLE product (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `version` varchar(512) CHARACTER SET utf8 DEFAULT NULL,
   `name` varchar(512) CHARACTER SET utf8 DEFAULT NULL,
