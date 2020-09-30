@@ -24,8 +24,8 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public Product getProductById(Integer id) {
-        return productRepository.findOne(id);
+    public Product getProductById(Integer id) throws Exception {
+        return productRepository.findById(id).orElseThrow(()-> new Exception("product not found"));
     }
 
     @Override
@@ -35,7 +35,7 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public void deleteProduct(Integer id) {
-        productRepository.delete(id);
+        productRepository.deleteById(id);
     }
 
 }
