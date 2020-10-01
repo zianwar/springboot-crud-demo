@@ -41,16 +41,17 @@ public class ProductController {
      * @param id
      * @param model
      * @return
+     * @throws Exception 
      */
     @RequestMapping("product/{id}")
-    public String showProduct(@PathVariable Integer id, Model model) {
+    public String showProduct(@PathVariable Integer id, Model model) throws Exception {
         model.addAttribute("product", productService.getProductById(id));
         return "productshow";
     }
 
     // Afficher le formulaire de modification du Product
     @RequestMapping("product/edit/{id}")
-    public String edit(@PathVariable Integer id, Model model) {
+    public String edit(@PathVariable Integer id, Model model) throws Exception {
         model.addAttribute("product", productService.getProductById(id));
         return "productform";
     }

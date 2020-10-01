@@ -6,7 +6,7 @@ public interface ProductService {
 
     Iterable<Product> listAllProducts();
 
-    Product getProductById(Integer id);
+    Product getProductById(Integer id) throws Exception;
 
     Product saveProduct(Product product);
 
