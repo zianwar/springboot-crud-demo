@@ -10,13 +10,10 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class ProductServiceImpl implements ProductService {
+     @Autowired
+     private ProductRepository productRepository;
 
-    private ProductRepository productRepository;
-
-    @Autowired
-    public void setProductRepository(ProductRepository productRepository) {
-        this.productRepository = productRepository;
-    }
+    
 
     @Override
     public Iterable<Product> listAllProducts() {
